@@ -340,6 +340,11 @@
             this.nmDog.Name = "nmDog";
             this.nmDog.Size = new System.Drawing.Size(160, 34);
             this.nmDog.TabIndex = 4;
+            this.nmDog.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label2
             // 
@@ -378,9 +383,9 @@
             // 
             this.cbPlayer.FormattingEnabled = true;
             this.cbPlayer.Items.AddRange(new object[] {
-            "Sahil has 120 Dollar ",
-            "Chetan has 100 Dollar",
-            "Palwinder has 150 Dollar"});
+            "Sahil has 50 Dollar ",
+            "Chetan has 50 Dollar",
+            "Palwinder has 50 Dollar"});
             this.cbPlayer.Location = new System.Drawing.Point(37, 34);
             this.cbPlayer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbPlayer.Name = "cbPlayer";
@@ -394,9 +399,9 @@
             this.lblPlayer1.Location = new System.Drawing.Point(559, 448);
             this.lblPlayer1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPlayer1.Name = "lblPlayer1";
-            this.lblPlayer1.Size = new System.Drawing.Size(246, 29);
+            this.lblPlayer1.Size = new System.Drawing.Size(232, 29);
             this.lblPlayer1.TabIndex = 6;
-            this.lblPlayer1.Text = "Sahil has 120 Dollar";
+            this.lblPlayer1.Text = "Sahil has 50 Dollar";
             // 
             // lblPlayer2
             // 
@@ -405,9 +410,9 @@
             this.lblPlayer2.Location = new System.Drawing.Point(559, 506);
             this.lblPlayer2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPlayer2.Name = "lblPlayer2";
-            this.lblPlayer2.Size = new System.Drawing.Size(269, 29);
+            this.lblPlayer2.Size = new System.Drawing.Size(255, 29);
             this.lblPlayer2.TabIndex = 22;
-            this.lblPlayer2.Text = "Chetan has 100 Dollar";
+            this.lblPlayer2.Text = "Chetan has 50 Dollar";
             // 
             // lblPlayer3
             // 
@@ -416,9 +421,9 @@
             this.lblPlayer3.Location = new System.Drawing.Point(559, 561);
             this.lblPlayer3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPlayer3.Name = "lblPlayer3";
-            this.lblPlayer3.Size = new System.Drawing.Size(304, 29);
+            this.lblPlayer3.Size = new System.Drawing.Size(290, 29);
             this.lblPlayer3.TabIndex = 23;
-            this.lblPlayer3.Text = "Palwinder has 150 Dollar";
+            this.lblPlayer3.Text = "Palwinder has 50 Dollar";
             // 
             // pictureBox19
             // 

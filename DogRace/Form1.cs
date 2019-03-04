@@ -25,7 +25,7 @@ namespace DogRace
     {
         // global variable for different Task like keep the record of bet amount and dog no and player no also 
         int tmr = 0;
-        int amt1 = 120, amt2 = 100, amt3 = 150;
+        int amt1 = 50, amt2 = 50, amt3 = 50;
         int plyr1 = 1, plyr2 = 2, plyr3 = 0;
         int winner = 0, bet1 = 0, bet2 = 0, bet3 = 0;
         int dog1 = 0, dog2 = 0, dog3 = 0, strt = 0,Num=0,Number=0;
@@ -115,26 +115,25 @@ namespace DogRace
         // another post define method to find the winner of the game from the interface , this is the initlization of the inherited method 
         public void findWinner() {
             // checking the player no 1 is winner or looser if he is winner then his amount will be increased or if he loos the game then his amount will be decreased
-            if (winner == dog1 && plyr1 == 1)
+            if (winner == dog1 && plyr1 == 1 && amt1 != 0)
             {
                 amt1 += bet1;
                 lblPlayer1.Text = "Sahil has " + amt1 + " Dollar ";
             }
-            if(plyr1==1 && winner!=dog1){
+            if(plyr1==1 && winner!=dog1 && amt1 != 0){
                 amt1 -= bet1;
                 lblPlayer1.Text = "Sahil has " + amt1 + " Dollar ";
-
             }
 
             // checking the player no 2 is winner or looser if he is winner then his amount will be increased or if he loos the game then his amount will be decreased
 
 
-            if (winner == dog2 && plyr2 == 2)
+            if (winner == dog2 && plyr2 == 2 && amt2 != 0)
             {
                 amt2 += bet2;
                 lblPlayer2.Text = "Chetan has " + amt2 + " Dollar ";
             }
-            if (plyr2 == 2 && winner != dog2)
+            if (plyr2 == 2 && winner != dog2 && amt2 != 0)
             {
                 amt2 -= bet2;
                 lblPlayer2.Text = "Chetan has " + amt2 + " Dollar ";
@@ -142,14 +141,14 @@ namespace DogRace
 
 
             // checking the player no 3 is winner or looser if he is winner then his amount will be increased or if he loos the game then his amount will be decreased
-            if (winner == dog3 && plyr3 == 3)
+            if (winner == dog3 && plyr3 == 3 && amt3 != 0)
             {
                 amt3 += bet3;
                 lblPlayer3.Text = "Palwinder has " + amt3 + " Dollar ";
             }
 
 
-            if (plyr3 == 3 && winner != dog3)
+            if (plyr3 == 3 && winner != dog3 && amt3 != 0)
             {
                 amt3 -= bet3;
                 lblPlayer3.Text = "Palwinder has " + amt3 + " Dollar ";
@@ -168,7 +167,7 @@ namespace DogRace
             //reset the combo box of the player so the image
             cbPlayer.Items[0] = "Sahil has "+amt1 +" Dollar";
             cbPlayer.Items[1] = "Chetan has " + amt2 + " Dollar";
-            cbPlayer.Items[2] = "Palwinder has " + amt1 + " Dollar";
+            cbPlayer.Items[2] = "Palwinder has " + amt3 + " Dollar";
 
         }
         // this is sued to start the running between the dog
